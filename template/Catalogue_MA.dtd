@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT InventairesCollection (Inventaire)>
+<!ELEMENT Inventaire (fileDesc, listBibl)>
+<!ELEMENT book (title, author?, date?, pubPlace?)>
+<!ELEMENT fileDesc (titleStmt,publicationStmt, sourceDesc)>
+<!ELEMENT titleStmt (title, respStmt)>
+<!ELEMENT respStmt (resp, name)>
+<!ELEMENT resp (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT bibl (title*, author, pubPlace, publisher, adress*, date, item, note)>
+<!ELEMENT listBibl (div*, title*)>
+<!ELEMENT pulblisher (#PCDATA)>
+<!ELEMENT adress (#PCDATA)>
+<!ATTLIST book type CDATA #IMPLIED>
+<!ELEMENT date EMPTY>
+<!ATTLIST date when CDATA #REQUIRED>
+<!ATTLIST date calendar (julian | gregorian) #REQUIRED>
+<!ELEMENT div (title*, bibl)>
+<!ATTLIST div type (section | subsection) #IMPLIED>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item type (format) #REQUIRED>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT pubPlace (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT sourceDesc (identifier)>
+<!ELEMENT identifier (#PCDATA)>
+<!ATTLIST itendifier type (digitization_id | library) #IMPLIED>
+<!ELEMENT publicationStmt (title, author, pubPlace, publisher, adress, date)>
+<!ELEMENT note (#PCDATA)>

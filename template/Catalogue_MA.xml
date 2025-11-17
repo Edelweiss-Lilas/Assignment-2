@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InventairesCollection SYSTEM "Catalogue_MA.dtd">
+<InventairesCollection>
+    <Inventaire>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+                <respStmt>
+                    <resp></resp>
+                    <name></name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <title></title>
+                <author></author>
+                <pubPlace></pubPlace>
+                <publisher></publisher>  
+                <adress></adress>
+                <date when="0000" calendar="gregorian"/>
+            </publicationStmt>
+            <sourceDesc>
+                <identifier></identifier>
+            </sourceDesc>
+        </fileDesc>
+        <listBibl>
+           <div type="section">
+               <title></title>
+                  <bibl>
+                      <title></title>
+                        <author></author>
+                        <pubPlace></pubPlace>
+                        <publisher></publisher>
+                        <date when="0000" calendar="gregorian"/>
+                        <item type="format"></item>
+                        <note></note>
+                        </bibl>
+              </div>
+        </listBibl>
+    </Inventaire>
+</InventairesCollection>
